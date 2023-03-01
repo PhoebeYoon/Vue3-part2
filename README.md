@@ -86,3 +86,32 @@ methods:{
 ```
 정렬 알고리즘에 대해 전혀 모른다면 위의 코드에서 return 문 앞에 console.log(a, b, a-b) 로 찍어보면 이해가 될 것이다.
 
+## if문을 사용하여 짝수만 출력해보자
+
+```html
+<body>
+<h1>배열연습(짝수만 출력)</h1>
+<div id="app">
+<ul>
+  <li v-for="number in numbers"> {{ number}}</li>
+</ul>
+<button v-on:click="evenNumber">짝수만출력하기</button>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return {
+   numbers:[2,4,19,8,6,5,7,19,34,3]
+     }
+  },
+  methods:{
+    evenNumber:function(){
+      this.numbers =this.numbers.filter(
+        function(value){ return value %2 ==0 }
+      )
+    }
+  }
+}).mount('#app');
+</script>
+
+```
