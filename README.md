@@ -31,3 +31,17 @@ export default {
 ```
 버튼을 클릭하면 콘솔창에 ``` <input type="text">  ``` 라고 출력된다. 
 이 ref 속성은 마치 자바스크립트에서 DOM에 있는 html 태그를 읽어올때 사용했던 document.getElementsByTagName 이나 querySelector와 마찬가지로 작동한다. 
+여기까지 잘 작동한다면 한줄 더 추가해보자 
+
+```html
+#<template> 안에 추가
+  <button @click="takeValue">입력한값 출력하기</button>
+ 
+#methods에 추가
+ takeValue(){
+      console.log(this.$refs.inputbox.value)
+    }
+```
+
+이제 빈 텍스트에 내용을 적고 '입력한값 출력하기' 버튼을 클릭하면 콘솔창에 해당 내용이 출력된다.
+
