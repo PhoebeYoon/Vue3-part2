@@ -84,5 +84,5 @@ methods:{
 </script>
 
 ```
-
+정렬 알고리즘에 대해 전혀 모른다면 위의 코드에서 return 문 앞에 console.log(a, b, a-b) 로 찍어보면 이해가 될 것이다.
 
