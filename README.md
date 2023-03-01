@@ -21,7 +21,7 @@
 <img width="500" alt="스크린샷 2023-03-01 오후 5 37 56" src="https://user-images.githubusercontent.com/48478079/222087377-e40b7e51-7b5f-4464-8c14-db2480d06efb.png">  
 
 모든 설치가 잘 되었다면  
-<img width="375" alt="스크린샷 2023-03-01 오후 6 00 00" src="https://user-images.githubusercontent.com/48478079/222092111-d07d32e6-93b5-4281-8bf5-9151ba36d38c.png">
+<img width="375" alt="스크린샷 2023-03-01 오후 6 00 00" src="https://user-images.githubusercontent.com/48478079/222092111-d07d32e6-93b5-4281-8bf5-9151ba36d38c.png">  
 이런 화면이 나올 것이다.   
 이제 이미지의 내용 중 마지막에 있는 것처럼 실행해보자
 
