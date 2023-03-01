@@ -12,7 +12,7 @@
   - 윈도우에서 ``` npm install -g @vue/cli ```
 4. 프로젝트 생성하기
   - 원하는 폴더로 이동 ( 터미널에서 cd 폴더명 )
-  -``` vue create 프로젝트명 (예, modal-project) ```
+  -``` vue create 프로젝트명 (예, vue-first) ```
   - 이후에 여러가지를 물어보는데 
 <img width="370" alt="스크린샷 2023-03-01 오후 5 35 20" src="https://user-images.githubusercontent.com/48478079/222087200-2414864b-fb8f-4378-ae40-2f084bb6c64e.png"> 
 <img width="370" alt="스크린샷 2023-03-01 오후 5 36 31" src="https://user-images.githubusercontent.com/48478079/222087216-a60f4f8f-0beb-4e4e-9857-7cca1bc943a8.png">
@@ -20,7 +20,11 @@
 <img width="350" alt="스크린샷 2023-03-01 오후 5 37 35" src="https://user-images.githubusercontent.com/48478079/222087357-1d858234-1d28-4cc2-b17d-c1b925287e0c.png">
 <img width="500" alt="스크린샷 2023-03-01 오후 5 37 56" src="https://user-images.githubusercontent.com/48478079/222087377-e40b7e51-7b5f-4464-8c14-db2480d06efb.png">  
 
-이렇게 한후에 폴더를 보면 프로젝트명이 만들어져 있다.  
-5. cd modal-project 엔터 > code .  (엔터) : 이 단계에서 package.json 파일의 내용을 좀 바꿔야한다.  
+모든 설치가 잘 되었다면  
+<img width="375" alt="스크린샷 2023-03-01 오후 6 00 00" src="https://user-images.githubusercontent.com/48478079/222092111-d07d32e6-93b5-4281-8bf5-9151ba36d38c.png">
+이런 화면이 나올 것이다.   
+이제 이미지의 내용 중 마지막에 있는 것처럼 실행해보자
+
+5. cd vue-first 엔터 > code .  (엔터) : 이 단계에서 package.json 파일의 내용을 좀 바꿔야한다.  
 6. 
 
