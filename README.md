@@ -29,5 +29,5 @@
 
 <img width="193" alt="스크린샷 2023-03-01 오후 6 03 59" src="https://user-images.githubusercontent.com/48478079/222093037-668f7565-c908-4c39-bc74-33fa8fc0d54e.png">
 
-7. 
+6. code .  ( vs code 실행) 
 
