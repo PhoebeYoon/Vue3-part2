@@ -30,7 +30,7 @@ console.log(numbers2); //(5) [1, 18, 2, 3, 5]
 18이 2보다 앞에 나온것을 확인할 수 있습니다. 위에서 설명했던대로 입니다. 그래서 이번에는 아주 간단한 수식을 사용해서 해결해 보겠습니다.
 이제 뺄셈을 이용하여 sort()의 개념을 살펴보자
 
-```javascript
+```html
 <script>
 const numbers2= [3,5,2,1,18]
 console.log(numbers2)
@@ -49,3 +49,11 @@ b=100;
 
 위의 결과처럼 말이다. 이 결과값을 가지고 정렬을 하면 제대로된 정렬이 될것이다.
 
+```html
+<script>
+  const numbers2= [3,5,2,1,18]
+  numbers2.sort(function(a,b) { return a-b })
+  console.log(numbers2)
+</script>
+
+```
