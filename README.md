@@ -4,7 +4,7 @@
 컴포넌트에 대한 여러 설명이 있지만 우리는 '독립적이고 재사용 가능한 블록'이라고만 일단 이해하자.  
 <img width="500" alt="스크린샷 2023-03-01 오후 3 05 49" src="https://user-images.githubusercontent.com/48478079/222058461-95eed3d6-8ebc-4e83-ad8d-ba7bb1e0c69c.png">
 
-여기서 ``` Header ```,``` Content ```,``` Footer ```,``` Aside ```,``` List ```를 독립적인 컴포넌트로 생각하면 된다.
+여기서 ``` Header ```,``` Content ```,``` Footer ```,``` Aside ```,``` List ```를 독립적인 재사용가능한 컴포넌트로 생각하면 된다.
 
 
 ### 컴포넌트 생성하기
@@ -29,15 +29,9 @@ Vue.component('my-component',{
         validator: function (value) { ... }
         }
     },
-3) data: function(){
-  return { ...  }
- },
-4) computed: {
-  fullName: function(){ ...  } 
-  },
-5) watch :{
-    firstName: function(value, oldvalue) { ... }
-},
+3) data: function(){  return { ...  } },
+4) computed: { fullName: function(){ ...  } },
+5) watch :{ firstName: function(value, oldvalue) { ... } },
 6) methods: { ... },
 7) template : '<span> {{ message }} </span> '
 
