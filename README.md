@@ -37,11 +37,19 @@ export default {
 #<template> 안에 추가
   <button @click="takeValue">입력한값 출력하기</button>
  
-#methods에 추가
- takeValue(){
+# methods에 추가
+ methods:{
+    handleClick(){
+      console.log(this.$refs.inputbox)
+      this.$refs.inputbox.classList.add('active')
+      this.$refs.inputbox.focus()
+    },
+    takeValue(){
       console.log(this.$refs.inputbox.value)
     }
+  }
 ```
+handleClick메소드는 빈 클래스를삽입하는 코드를 추가했다. 실제 css를 추가한 것이 아니기 때문에 개발자도구에서 active 클래스명이 삽입되었는지만 확인해본다. 그리고 버튼을 클릭하면  input태그가 focus되어 활성화되는 것을 볼 수 있다. 이제 빈 텍스트에 내용을 적고 '입력한값 출력하기' 버튼을 클릭하면 콘솔창에 해당 내용이 출력된다.
 
-이제 빈 텍스트에 내용을 적고 '입력한값 출력하기' 버튼을 클릭하면 콘솔창에 해당 내용이 출력된다.
+
 
