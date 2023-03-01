@@ -15,3 +15,8 @@
 4. 아래와 같은 내용이 나옵니다. 
 <img width="300" alt="스크린샷 2023-03-01 오후 8 30 53" src="https://user-images.githubusercontent.com/48478079/222127357-c3bc9a01-1958-4720-aca4-299a36f11d7e.png">   
 url를 클릭하면 로컬서버가 실행되면서 우리의 어플리케이션의 내용이 반영되어 나옵니다   
+
+5. \components폴더에 있는 App.vue를 열어보면 
+6. ```<HelloWorld msg="Welcome to ~"/>``` 가 있는데 여기 msg 는 어디있을까요?  
+   ```import HelloWorld from './components/HelloWorld.vue' ```의 내용을 따라 컴포넌트 폴더내의 HelloWorld.vue파일을 열어봅니다.
+7. ``` <h1> {{ msg }} </h1> ```이 보입니다. 
