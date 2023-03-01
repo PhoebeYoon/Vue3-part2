@@ -50,8 +50,12 @@ Vue CLI는 터미널/명령줄에서 Vue로 작업하는 데 사용되는 도구
   ```javascript
   import { createApp } from 'vue' (1)
   import App from './App.vue' (2)
-  createApp(App).mount('#app')
+  createApp(App).mount('#app') (3)
   ``` 
   있습니다.  여기에 있는  './App.vue'(2) 은 저 위에 있는 디렉토리구조에서의 저 App.vue를 말합니다. 그럼 (1)은 뭐냐면, vue라는 프레임워크에 필요한 각종 요소들을 node_modules에서 가져오도록 해준다고 이해하시면 됩니다. 
+ 4. 이제 App.vue 파일을 보도록 하겠습니다. 이제까지  실습했던 파일과 좀 다릅니다. 우리는 이제껏 (3) 처럼 사용했는데 App.vue에는 export 도 있고 ``` <template> ~~ import HelloWorld from './components/ ~~   ``` 뭐 이런것들이 보입니다.  
+여기에서는 파일들의 관계와 어떤 폴더에 어떤 파일이 있는지를 주의깊게 보기만 하면 됩니다. 
+ -끝-
+  
   
   
