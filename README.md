@@ -8,8 +8,24 @@
 
 우선 자바스크립트로만 실행해 보겠습니다.
 ```javascript
-const months = ['March', 'Jan', 'Feb', 'Dec'];
+const months = ['March', 'Jan', 'Feb', 'Dec']; 
 months.sort();
-console.log(months);
+console.log(months);// 결과는 ["Dec", "Feb", "Jan", "March"]
+```
+여기서 순차정렬이 기본이라고 했는데 왜 'Jan'이 첫번째가 아니고 'Dec'가 첫번째로 나오지? 하시는 분을 위해.   
+정렬을 사람의 방식대로 한다면 'J' 가 첫번째여야 하지만 컴퓨터는 정렬할때 코드값(예, 아스키) 를 사용합니다.   
+이 아스키코드에 따르면 " M(77),J(74),F(70),D(68) " 으로 'D'가 가장 작은 숫자입니다. 그래서 'Dec' 이 가장 앞에 있는 것입니다.
+
+
+이제 숫자에 적용해보겠습니다.
+```javascript
+const numbers= [3,5,2,1,8]
+const numbers2= [3,5,2,1,18]
+numbers.sort();
+numbers2.sort();
+console.log(numbers);  //(5) [1, 2, 3, 5, 8]
+console.log(numbers2); //(5) [1, 18, 2, 3, 5]
 
 ```
+18이 2보다 앞에 나온것을 확인할 수 있습니다. 위에서 설명했던대로 입니다. 그래서 이번에는 아주 간단한 수식을 사용해서 해결해 보겠습니다.
+
