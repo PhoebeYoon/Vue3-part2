@@ -7,8 +7,48 @@
 여기서 ``` Header ```,``` Content ```,``` Footer ```,``` Aside ```,``` List ```를 독립적인 컴포넌트로 생각하면 된다.
 
 
+### 컴포넌트 생성하기
+```
+Vue.component('컴포넌트이름', { 컴포넌트 내용 }); 
+```
+여기서, 컴포넌트이름은 template속성에서 사용할 html 사용자정의 태그이다. 그러니까 이제까지 이미 만들어져있는 태그들만 사용했다면 이제는 본인이 태그를 만든다고 생각하면 좋을 듯하다.
 
-### 컴포넌트 생성하기?
+### 컴포넌트 해부
+```
+Vue.component('my-component',{
+ 1) components: {
+    ProductComponent, ReviewComponent (template에서 사용될 컴포넌트이름 )
+  },
+ 2) props: {
+    message: String,
+    product: Object,
+    email: {
+        type: String,
+        required: true,
+        default: 'none'
+        validator: function (value) { ... }
+        }
+    },
+3) data: function(){
+  return { ...  }
+ },
+4) computed: {
+  fullName: function(){ ...  } 
+  },
+5) watch :{
+    firstName: function(value, oldvalue) { ... }
+},
+6) methods: { ... },
+7) template : '<span> {{ message }} </span> '
+
+}
+
+```
+이렇게 7개로 구성되어 있다
+
+
+
+
 1. 컴포넌트이름은 '의미있는 이름'으로 하는 것이 좋다.   
 2. 대문자로 시작한다.   
 3. 컴포넌트 불러오기 'import _____ from '경로/파일이름.vue';
