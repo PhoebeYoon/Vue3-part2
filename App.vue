@@ -16,7 +16,7 @@ export default {
   name :'App',
   data() {
     return {
-      title :'My Frist Vue App'
+      title :'My Frist Vue App :)'
     }
   }
 }
