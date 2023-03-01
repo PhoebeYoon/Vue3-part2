@@ -25,6 +25,9 @@
 이런 화면이 나올 것이다.   
 이제 이미지의 내용 중 마지막에 있는 것처럼 실행해보자
 
-5. cd vue-first 엔터 > code .  (엔터) : 이 단계에서 package.json 파일의 내용을 좀 바꿔야한다.  
-6. 
+5. cd vue-first 엔터 > 폴더의 내용을 보면 아래처럼 여러개의 폴더와 파일이 보일 것이다.
+
+<img width="193" alt="스크린샷 2023-03-01 오후 6 03 59" src="https://user-images.githubusercontent.com/48478079/222093037-668f7565-c908-4c39-bc74-33fa8fc0d54e.png">
+
+7. 
 
