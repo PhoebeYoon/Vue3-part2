@@ -37,7 +37,7 @@ Vue CLI는 터미널/명령줄에서 Vue로 작업하는 데 사용되는 도구
 1. <b>node_modules</b> : package.json에 명시된 library나 dependency들이 설치되어 있는 폴더이면서 라이브러리들이 몽땅 들어가 있는 폴더입니다 그래서 git에 프로젝트를 업로드할때 이 폴더는 제외시키곤 합니다.(용량이 크니까요) 이 폴더에 있는 내용은 수정하는 것이 아닙니다.
 2. <b>\public 폴더</b>에는 index.html 파일이 있습니다. 그리고 우리가 이제까지 공부할때 사용했던 그 id='app'이 들어가 있습니다. 브라우저에서 이 index.html 파일을 불러옵니다 파일을 열어보시면 내용이 비어있고 ``` <div id='app'></div> 만 달랑 들어있습니다. 여기에 들어갈 내용은 어디있을까요? 
 3. <b> \src폴더 <b>에는
-     ```
+   ```
     \src
      ⎿\assets
      ⎿\components
@@ -45,10 +45,12 @@ Vue CLI는 터미널/명령줄에서 Vue로 작업하는 데 사용되는 도구
        App.vue
   
   ```  
-  있습니다. main는 자바스크립트파일로 내용에는 createApp().mount()가 있습니다. 그리고 이 안에 있는 
+   있습니다. main는 자바스크립트파일로 내용에는 createApp().mount()가 있습니다. 그리고 이 안에 있는 
+  
   ```
   import { createApp } from 'vue' 
   import App from './App.vue'
   createApp(App).mount('#app')
-  ``` 
+  ```  
+  
   './App.vue' 은 그 디렉토리구조에 있는 저 App.vue 를 말합니다
