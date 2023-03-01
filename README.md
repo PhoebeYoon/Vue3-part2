@@ -20,3 +20,7 @@ url를 클릭하면 로컬서버가 실행되면서 우리의 어플리케이션
 6. ```<HelloWorld msg="Welcome to ~"/>``` 가 있는데 여기 msg 는 어디있을까요?  
    ```import HelloWorld from './components/HelloWorld.vue' ```의 내용을 따라 컴포넌트 폴더내의 HelloWorld.vue파일을 열어봅니다.
 7. ``` <h1> {{ msg }} </h1> ```이 보입니다. 
+
+
+### 이제 더 자세한 내용을 살펴보기 전에 App.vue 파일에는 3개의 주요부분을 한번 더 짚고 넘어가겠습니다.
+template 태그 , script 태그, style 태그입니다. 그리고 script 태그에는 <b>import 컴포넌트, export default </b> 가 있다.
