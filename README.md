@@ -57,3 +57,32 @@ b=100;
 </script>
 
 ```
+
+종합해서 아래와 같이 사용할 수 있다.   
+
+```html
+<h1>배열연습</h1>
+<div id="app">
+<ul>
+  <li v-for="number in numbers">{{ number }}</li>
+</ul>
+<button v-on:click="sortData(numbers)">정렬하기</button>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return {
+    numbers:[1,4,19,8,6]
+     }
+  },
+methods:{
+  sortData: function(x){
+    x.sort(function(a,b) { return a-b })
+  }
+}
+}).mount('#app');
+</script>
+
+```
+
+
