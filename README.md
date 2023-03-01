@@ -44,4 +44,11 @@ Vue CLI는 터미널/명령줄에서 Vue로 작업하는 데 사용되는 도구
        main.js
        App.vue
   
+  ```  
+  있습니다. main는 자바스크립트파일로 내용에는 createApp().mount()가 있습니다. 그리고 이 안에 있는 
   ```
+  import { createApp } from 'vue' 
+  import App from './App.vue'
+  createApp(App).mount('#app')
+  ``` 
+  './App.vue' 은 그 디렉토리구조에 있는 저 App.vue 를 말합니다
