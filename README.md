@@ -11,4 +11,7 @@
 그래서 이제 다음과 같이 실습해 보겠습니다.   
 1. vs code에서 새 터미널을 실행합니다.
 2. 프로젝트폴더인지 확인하십시요. 예) vue-first>
-3. ```vue-first > npm run serve ```
+3. ```vue-first > npm run serve ``` vue_cli_설치 브랜치에서 vue셋팅이 끝난 뒤 나왔던 파란색 명령어입니다.
+4. 아래와 같은 내용이 나옵니다. 
+<img width="300" alt="스크린샷 2023-03-01 오후 8 30 53" src="https://user-images.githubusercontent.com/48478079/222127357-c3bc9a01-1958-4720-aca4-299a36f11d7e.png">   
+url를 클릭하면 로컬서버가 실행되면서 우리의 어플리케이션의 내용이 반영되어 나옵니다   
