@@ -52,10 +52,21 @@ export default {
        자식컴포넌트에서 부모 컴포넌트의 데이터를 가져올때 사용하는 $emit()가 적으면 된다
        $emit의 값으로는 'emit하고 싶은 이벤트의 이름'를 적으면 된다.
        그래서 사용자이벤트로 close라는 이벤트를 새로 만든다. (close이벤트라는 것은 없다. 그래서 사용자이벤트로 만든것이다)
+       그럼 이 'close'라는 이벤트를 받는 뭔가가 있어야 하는데, 어디에 있어야 하냐면 바로 부모컴포넌트에 있어야 한다
        -->
     }}
 }
 </script>
+``` 
+[ App.vue ]
+
 ```
+Modal태그에 @close 이벤트를 추가한다. 아래처럼.
+<div v-if="showModal">
+      <Modal :comments="comments" :text ="text" theme="sale" @close=""/>
+</div>
+그리고 @close 이벤트는 결국은 showModal의 값을 바꿔야하기 때문에 showModal의 값을 바꾸는 toggelWin()함수를 부르면 되는 것이다
+```
+결국 $emit(사용자이벤트)의 역할은 자식 컴포넌트와 부모컴포넌트에 동일한 이벤트를 추가하여 서로 연결시켜주는 것이다. 마치 플러그와 소켓처럼  
 
-
+<img width="495" alt="스크린샷 2023-03-02 오후 2 45 15" src="https://user-images.githubusercontent.com/48478079/222341795-b0d42ecc-1f86-4c4b-878f-c4bfd9a316a2.png">
