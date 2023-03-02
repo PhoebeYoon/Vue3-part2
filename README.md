@@ -8,3 +8,50 @@
 <img width="250" alt="스크린샷 2023-03-02 오후 1 53 41" src="https://user-images.githubusercontent.com/48478079/222334595-a2d0484a-e95a-410a-b709-0f0f703d7a5f.png"> <img width="250" alt="스크린샷 2023-03-02 오후 1 53 41" src="https://user-images.githubusercontent.com/48478079/222335270-cb9fa327-862a-4adb-b2d2-bdc2600fb38d.png">   
 <img width="250" alt="스크린샷 2023-03-02 오후 2 05 19" src="https://user-images.githubusercontent.com/48478079/222336190-489fa534-1985-44be-bf28-19b15e7a07c7.png">
 
+1. 팝업창 보기를 클릭하면 모달창이 나타나게하기 위해  
+[ App.vue ]
+```
+1) <template>안에 모달창을 보기/감춤을 다루기 위해 <div> 태그를 만들고 <Modal>를 자식노드로 만든다. 그리고 <div> 안에 v-if문을 추가하여 true/false에 따라 보이거나 감추도록 설정한다
+2) 1)을 지정했으니 v-if문에서 값인 showModal의 속성값을 data()의 return문에 디폴트값을 false로 지정하여 추가한다.
+3) 여기까지 하면 팝업창보기 버튼을 클릭했을때 모달창이 실행된다. 문제는 이것의 z-index값이 '팝업창보기' 버튼보다 높아서 이 버튼을 다시 클릭하지 못한다는 것이다 그래서 z-index값을 바꾸는 대신 모달창의 빈곳(검정색배경)을 클릭하면 모달창이 닫히도록 만드는 것이다.
+4) Modal.vue 에 methods:{ } 안에 toggleWin() 함수를 정의하여 값을 반대로 지정하도록 했다 (!this.showModal)
+
+<div v-if="showModal">
+      <Modal :comments="comments" :text ="text" theme="sale" @close="toggleWin"/>
+    </div>
+</templage>
+<button @click="toggleWin">팝업창보기</button>
+
+data(){
+    return {
+      title :"My First Vue Application",
+      comments:"회원가입 | 로그인",
+      text:'가입혜택이 있습니다',
+      showModal : false
+    }
+  },
+  methods:{
+    toggleWin() {
+      this.showModal=!this.showModal
+    }
+  }
+```  
+그런데 여기서 모달창의 검정색 배경을 클릭하는 부분에서 이 검정색배경은 Modal.vue에 속한 부분이라, 
+[ Modal.vue ]
+```
+<template>
+  <div class="backdrop" @click="closeModal">  으로 변경하고
+ 
+<script>
+export default {
+  props:[ 'comments','text', 'theme'],
+  methods:{ closeModal(){ 
+       여기서 부모컴포넌트 (App.vue)에 정의된 toggleWin() 함수를 실행시켜야 한다
+       그래서 자식컴포넌트에서 부모 컴포넌트의 데이터를 가져올때 사용하는
+       $emit()가 사용되면 $emit의 값으로는 'emit하고 싶은 이벤트의 이름'를 적는다
+    }}
+}
+</script>
+```
+
+
