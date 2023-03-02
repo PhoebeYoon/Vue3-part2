@@ -2,7 +2,7 @@
 
 ##### :star: vue_cli_실행5에 이어지는 내용입니다.
 
-아래의 이미지대로 작동하도록 만들어보자.  
+## 아래의 이미지처럼 작동하도록 만들어보자.  
 <img width="250" alt="스크린샷 2023-03-02 오후 2 05 01" src="https://user-images.githubusercontent.com/48478079/222336145-fd1afcdb-0049-4809-a738-58d9c8892b65.png"> 
 
 <img width="250" alt="스크린샷 2023-03-02 오후 1 53 41" src="https://user-images.githubusercontent.com/48478079/222334595-a2d0484a-e95a-410a-b709-0f0f703d7a5f.png"> <img width="250" alt="스크린샷 2023-03-02 오후 1 53 41" src="https://user-images.githubusercontent.com/48478079/222335270-cb9fa327-862a-4adb-b2d2-bdc2600fb38d.png">   
@@ -75,7 +75,7 @@ Modal태그에 @close 이벤트를 추가한다. 아래처럼.
 
 <img width="425" alt="스크린샷 2023-03-02 오후 2 45 15" src="https://user-images.githubusercontent.com/48478079/222341795-b0d42ecc-1f86-4c4b-878f-c4bfd9a316a2.png">
 
-# 이벤트에  modifier를 추가하자 
+## Event Modifiers를 삽입해보자  
 이것이 왜 필요한지 먼저 살펴보자.  위에 있는 결과에서 검정색배경을 클릭하면 모달창이 닫히는 것을 구현했다. 하지만 검정색 배경이 아닌 곳 예를 들어 빨간색안쪽를 클릭해서 모달창이 닫힌다.  
 그래서 이번에는 검정색배경부분을 클릭했을때만 모달창이 닫히도록 만들어보자 아주 간단하다.  
 [ Modal.vue ]
