@@ -117,3 +117,40 @@ Modal.vue의 내용을 이렇게 변경한다.
 
 
 
+### 아래의 이미지와 같은 결과를 만들어보세요 스타일을 변경하시면 됩니다.
+
+
+<img width="280" alt="스크린샷 2023-03-02 오후 8 58 00" src="https://user-images.githubusercontent.com/48478079/222422522-9bb529db-acc4-419c-9d43-6bbdd8648c02.png">   
+
+
+<b>To complete this project , make it out like this image.
+Try it first and reference it down below  later! Okay? :smile: </b>
+
+
+
+```style
+
+<style>
+.modal {
+  width:400px; padding:20px; margin:30% auto;
+  background: white;
+  border-radius: 10px;
+}
+.modal p { color:#fff; font-size: 120%; }
+.backdrop{ top:0; position: fixed;
+  background: rgba(0,0,0,0.5);
+  width: 100%;  height: 100%;}
+.modal.sale { background:crimson; color:#fff }
+.modal.sale h1 { color: #fff;}
+.modal .actions{
+  text-align: center; margin:30px 0 10px 10px;
+}
+.modal .actions a{ color:#333; padding: 8px; 
+  border:1px solid #eee; border-radius: 4px; 
+  text-decoration: none; margin: 10px;}
+.modal.sale .actions a{
+  color:white
+}
+</style>
+
+```
