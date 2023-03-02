@@ -5,6 +5,7 @@
 
 ## teleport란
 텔레포트는 index.html 안에 ```<div id="app">```과 같은 레벨의 별개의 div를 만드는 것이다. vue_slot에 사용했던 내용을 가지고 해보자.  
+실습을 위해 앞에서 했던 예제에서 버튼을 추가하고 Modal를 하나 더 추가한다. 
 
 [index.html] 
 ```html
@@ -27,7 +28,7 @@
         </template>
       </Modal>
     </div>
-    <!--  -->
+
     <div v-if="showModalTwo">
       <Modal @close="toggleModalTwo">
         <h1>Sign up to the newsletter</h1>
@@ -38,14 +39,6 @@
     <button @click="toggleModal">open modal 1</button>
     <button @click="toggleModalTwo">open modal 2</button>
 </template>
-
-```  
-일단, 이렇게 내용을 적는다.  그리고,  
-```   <teleport to=".modals"   v-if="showModal"  > ``` 로 변경한다.  
-여기서 ' to="css셀렉터" '는 teleport가 어디에 있는지 알려주는 것인데 css셀렉터를 전달해야 하기 때문에 <b>.modals </b>라고 적어야 한다.
-[App.vue]의 나머지 내용도 추가하자. 
-
-```html
 <script>
 import Modal from './components/Modal.vue'
 export default {
@@ -54,8 +47,6 @@ export default {
   data(){
     return {
       title :"My First Vue Application",
-      comments:"회원가입 | 로그인",
-      text:'가입혜택이 있습니다',
       showModal:false,
       showModalTwo:false
     }
@@ -71,4 +62,9 @@ export default {
 }
 </script>
 
-```
+```  
+일단, 이렇게 내용을 적는다.  그리고,   
+```  <div v-if="showModal"  > ```의 내용을  
+```  <teleport to=".modals"   v-if="showModal"  > ``` 로 변경한다.  
+여기서 to="css셀렉터"는 teleport가 어디에 있는지 알려주는 것인데 css셀렉터를 전달해야 하기 때문에 <b>.modals </b>라고 적어야 한다.
+
