@@ -171,6 +171,6 @@ export default {
 
 <img width="256" alt="스크린샷 2023-03-02 오후 1 14 22" src="https://user-images.githubusercontent.com/48478079/222329903-c14a2cd4-61f6-49f4-ad5c-11ba29571b51.png"> <img width="258" alt="스크린샷 2023-03-02 오후 1 14 02" src="https://user-images.githubusercontent.com/48478079/222329888-003159a3-0362-4cf1-ae07-9f004d5cfab5.png">   
 
-``` <div class="modal" :class="{sale: theme ==='sale'}"> ``` 에서 theme =="sale" 인지에 따라 스타일이 달라진다.  여기서 ``` class="modal" 를 ``` static class 라고 하고,  조건에 따라  내용이 달라지는 ```  :class="{sale: theme ==='sale'}" ```를 dynamic class 라고 한다.   
+``` <div class="modal" :class="{sale: theme ==='sale'}"> ``` 에서 theme =="sale" 인지에 따라 스타일이 달라진다.  여기서 ``` class="modal" 를 ``` static class (정적 클래스)라 하고  조건에 따라  내용이 달라지는 ```  :class="{sale: theme ==='sale'}" ```를 dynamic class (동적클래스)라고 한다.   
 동적클래스는 <b>:class="{클래스명 : 조건} >/b>의 형식이다.
 
