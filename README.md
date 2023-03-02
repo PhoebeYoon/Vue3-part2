@@ -18,7 +18,7 @@
   <h1>{{ title }}</h1>
   <p>created by Vue3</p> 
     <div v-if="showModal"  > <!-- 아래에서 여기 코드를 바꿉니다 -->
-      <Modal  theme="sale"  @close="toggleModal">
+      <Modal  theme=""  @close="toggleModal">
         <h2>UVC</h2>
         <p>Learing font-end-developer course</p>
         <template v-slot:links>   
@@ -42,5 +42,33 @@
 ```  
 일단, 이렇게 내용을 적는다.  그리고,  
 ```   <teleport to=".modals"   v-if="showModal"  > ``` 로 변경한다.  
-여기서 ' to="css셀렉터" '는 teleport가 어디에 있는지 알려주는 것인데 css셀렉터를 전달해야 하기 때문에 '.modals'라고 적어야 한다.
+여기서 ' to="css셀렉터" '는 teleport가 어디에 있는지 알려주는 것인데 css셀렉터를 전달해야 하기 때문에 <b>.modals </b>라고 적어야 한다.
+[App.vue]의 나머지 내용도 추가하자. 
 
+```html
+<script>
+import Modal from './components/Modal.vue'
+export default {
+  name :'App',
+  components :{ Modal}, 
+  data(){
+    return {
+      title :"My First Vue Application",
+      comments:"회원가입 | 로그인",
+      text:'가입혜택이 있습니다',
+      showModal:false,
+      showModalTwo:false
+    }
+  },
+  methods:{
+    toggleModal(){
+      this.showModal = !this.showModal
+    },
+    toggleModalTwo(){
+      this.showModal = !this.showModal
+    }
+  }
+}
+</script>
+
+```
