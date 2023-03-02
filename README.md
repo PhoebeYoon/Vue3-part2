@@ -21,7 +21,7 @@
 5) Modal.vue 에 methods:{ } 안에 toggleWin() 함수를 정의하여 값을 반대로 지정하도록 했다 (!this.showModal)
 
 <div v-if="showModal">
-      <Modal :comments="comments" :text ="text" theme="sale" @close="toggleWin"/>
+      <Modal :comments="comments" :text ="text" theme="sale" />
     </div>
 </templage>
 <button @click="toggleWin">팝업창보기</button>
