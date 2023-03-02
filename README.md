@@ -15,7 +15,6 @@
 
 ```
 
-
 [자식 컴포넌트]
 ```html
 <template>
@@ -52,5 +51,54 @@ template>
 와 같으면 검정배경을 클릭하면 모달창이 닫힙니다.  
 
 ### 2. v-slot 사용법  
-v-slot을 사용할 때, 무조건 template 태그로 감싸고 그 컴포넌트 안에서 v-slot를 사용해야 합니다. 
+새로운 템플릿을 만들고 v-slot를 사용해보겠습니다. v-slot을 사용할 때, 무조건 template 태그로 감싸고 그 컴포넌트 안에서 v-slot를 사용해야 합니다. 
+
+[App.vue]
+```html
+<template>
+  <h1>{{ title }}</h1>
+  <p>created by Vue3</p>
+    <div v-if="showModal"  >
+      <Modal  theme="sale"  @close="toggleWin">
+        <h2>UVC</h2>
+        <p>Learing font-end-developer course</p>
+        <template v-slot:links>   
+          <a href="#">아이디 찾기</a> | 
+          <a href="#">비번 찾기</a>
+        </template>
+      </Modal>
+    </div>
+    <button @click="toggleWin">팝업창보기</button>
+</template>
+```
+template 태그가 2개 있다 바깥쪽에 안쪽에, 그리고 안쪽에 새로 만든 슬롯의 이름은 'links'정했다. 바깥쪽것은 이름이 없다.    
+[Modal.vue]
+```html
+<template>
+  <div class="backdrop" @click.self="closeModal"> 
+    <div class="modal" :class="{sale: theme =='sale'}">
+      <slot></slot>
+      <div class="actions">
+        <slot></slot>
+      </div>
+    </div>
+  </div>
+</template>
+```    
+Modal.vue에 보면 slot이 두군데 언급되어 있다. 이 상태에서 실행해보면 아래 이미지와 같이 출력된다. 
+<img width="260" alt="스크린샷 2023-03-02 오후 6 33 44" src="https://user-images.githubusercontent.com/48478079/222389208-efa37795-30a8-4955-a231-82db91aa2bc8.png">
+디폴트인 슬롯이 반복된 것을 확인할 수 있다. 그래서 새로 안쪽에 만든 슬롯에 이름을 지정해주어야 한다. 
+Modal.vue의 내용을 이렇게 변경한다.  
+```html
+ <div class="actions">
+        <slot name="links"></slot>
+ </div>
+```
+
+정리하자면  
+부모 컴포넌트에는 ``` <template v-slot:이름> 내용 </template>   ```   
+자식 컴포넌트에는 ``` <slot name="이름"></slot>   ``` 
+
+<img width="260" alt="스크린샷 2023-03-02 오후 6 38 25" src="https://user-images.githubusercontent.com/48478079/222391400-97ea8c7e-2e2f-462c-af0e-092b5379a4f4.png">  
+
 
