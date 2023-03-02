@@ -56,7 +56,9 @@ export default {
 }
 </script>
 ```
-<img width="268" alt="스크린샷 2023-03-02 오전 11 27 40" src="https://user-images.githubusercontent.com/48478079/222315312-eb838ffb-e553-4530-87cf-b80f6e400f84.png">
+<img width="258" alt="스크린샷 2023-03-02 오전 11 39 29" src="https://user-images.githubusercontent.com/48478079/222317012-fe5df019-3c79-414a-933b-161837869b50.png">
+
+
 와 같이 출력된다. 이제 props를 사용해서 같은 결과를 얻어보자. props 는 상위컴포넌트에서 하위 컴포넌트로 데이터를 전달할때 사용한다는 것을 기억할 것이다. 그래서 App.vue와 Modal.vue의 내용을 바꿔야 한다.  
 
 [App.vue] 
