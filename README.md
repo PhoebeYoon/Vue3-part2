@@ -69,4 +69,4 @@ Modal태그에 @close 이벤트를 추가한다. 아래처럼.
 ```
 결국 $emit(사용자이벤트)의 역할은 자식 컴포넌트와 부모컴포넌트에 동일한 이벤트를 추가하여 서로 연결시켜주는 것이다. 마치 플러그와 소켓처럼  
 
-<img width="495" alt="스크린샷 2023-03-02 오후 2 45 15" src="https://user-images.githubusercontent.com/48478079/222341795-b0d42ecc-1f86-4c4b-878f-c4bfd9a316a2.png">
+<img width="425" alt="스크린샷 2023-03-02 오후 2 45 15" src="https://user-images.githubusercontent.com/48478079/222341795-b0d42ecc-1f86-4c4b-878f-c4bfd9a316a2.png">
