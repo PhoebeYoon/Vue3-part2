@@ -121,8 +121,53 @@ export default {
 ```  
 
 ## 바인딩을 활용해서 사용해보자   
+[App.vue] 
+
+```html
+<template>
+  <h1>{{ title }}</h1>
+  <p>created by Vue3</p>
+  <Modal :comments="comments" :text ="text" theme="sale" />
+</template>
+
+<script>
+import Modal from './components/Modal.vue'
+export default {
+  name :'App',
+  components :{ Modal}, 
+  data(){
+    return {
+      title :"My First Vue Application",
+      comments:"회원가입 | 로그인",
+      text:'가입혜택이 있습니다'
+    }
+  }
+}
+</script>
+```
+
+[ Modal.vue ]
+
+```html
+
+<template>
+    <div class="modal" :class="{sale: theme ==='sale'}">
+    <!-- 기존내용을 이렇게 변경 -->
+</template>
 
 
+<script>
+export default {
+  props:[ 'comments','text', 'theme']
+}
+</script>
+
+<style>
+/* 아래내용을 기존내용에 추가 */
+.modal.sale { background:crimson; color:#fff }
+.modal.sale h1 { color: #fff;}
+</style>
+```
 
 
 
