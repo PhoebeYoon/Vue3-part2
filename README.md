@@ -64,7 +64,7 @@ h1 { border-bottom: 2px dashed #000;
  
 1) import Modal from './components/Modal.vue' 컴포넌트를 불러오고,  
 2) components :{ Modal},  컴포넌트를 등록하고,   
-3) <Modal />  컴포넌트를  태그처럼 사용
+3) <Modal />  컴포넌트를  태그로 사용
   
 여기까지 잘 작성되었다면 결과화면은  
 <img width="330" alt="스크린샷 2023-03-01 오후 10 35 14" src="https://user-images.githubusercontent.com/48478079/222154090-4b73ce2e-1147-4c1c-b4d1-19b62073eea6.png">
