@@ -70,4 +70,18 @@ export default {
 
 <img width="300" alt="스크린샷 2023-03-02 오후 10 23 35" src="https://user-images.githubusercontent.com/48478079/222440820-e6f29ee6-26fc-4d0c-8f37-05ced59bd80c.png">   
 
-<img width="250" alt="스크린샷 2023-03-02 오후 10 23 41" src="https://user-images.githubusercontent.com/48478079/222440863-656630ff-af07-4306-a98b-4dbf6e9472b4.png">  <img width="264" alt="스크린샷 2023-03-02 오후 10 23 51" src="https://user-images.githubusercontent.com/48478079/222440880-129bf9bc-e4e9-45a6-b104-0d760c93b467.png">
+<img width="250" alt="스크린샷 2023-03-02 오후 10 23 41" src="https://user-images.githubusercontent.com/48478079/222440863-656630ff-af07-4306-a98b-4dbf6e9472b4.png">  <img width="264" alt="스크린샷 2023-03-02 오후 10 23 51" src="https://user-images.githubusercontent.com/48478079/222440880-129bf9bc-e4e9-45a6-b104-0d760c93b467.png">   
+
+[App.vue] 에 스타일을 추가해보자. #app의 스타일을 .modals에서도 공동으로 사용하도록 지정한다. 
+```html
+#app, .modals {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+```
+
+
