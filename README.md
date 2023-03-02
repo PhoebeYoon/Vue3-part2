@@ -88,5 +88,37 @@ export default {
 }
 </script>
 
+```   
+props를 이용하여 다른 것도 전달해보자.  
+
+[App.vue] 
+
+```html
+<template>
+  <h1>{{ title }}</h1>
+  <p>created by Vue3</p>
+ <Modal comments="회원가입 | 로그인" text="가입혜택이 있습니다"/>
+</template>
 ```
+
+[ Modal.vue ]
+```html
+<template>
+  <div class="backdrop"> 
+    <div class="modal">
+      <h2>{{ comments}}</h2>
+      <p> Modal content</p>
+      <span> {{ text }}</span>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props:[ 'comments' ,'text']
+}
+</script>
+
+```   
+
 
