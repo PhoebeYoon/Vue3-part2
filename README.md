@@ -1,18 +1,6 @@
 ##### :cactus: Vue3 -part2
 
-## Multiple components 
- ``` App.vue ```  (Root component)    
-     |  
-      
- ``` Header.vue  ```  
- 
- ``` Article.vue (parent 컴포넌트) ```  ---  ``` Content.vue ``` (child 컴포넌트)
-                                      \  ``` Comments.vue ``` (child 컴포넌트)
 
-``` Footer.vue  ```   
-
-
-컴포넌트 트리는 아래와 같다
  
  
 ## 부모 --> 자식 데이터 전달 
@@ -43,8 +31,60 @@ data(){
    }
 ```  
 일단 모양을 익혀두자. 좀더 언급해야 할것이 있지만 나중에 다시 살펴보자.
-2. 이제 a. , b.의 방식으로 살펴보자
+2. 이제 a. , b.의 방식으로 살펴보자.
+vue-cli-실행4 의 예제를 갖고 해보자. Modal.vue의 내용을 아래처럼 변경해보자.
+```html
+<template>
+  <div class="backdrop"> 
+    <div class="modal">
+      <h2>{{ comments  }}</h2>
+      <p> Modal content</p>
+    </div>
+  </div>
+</template>
+```   
+여기서 
+'comments'가 어디로부터 오는가를 볼것이다.  같은 Modal.vue파일에서 
+```javascript
+<script>
+export default {
+  data(){
+    return {
+      comments:'회원가입 | 로그인'
+    }
+  }
+}
+</script>
+```
+<img width="268" alt="스크린샷 2023-03-02 오전 11 27 40" src="https://user-images.githubusercontent.com/48478079/222315312-eb838ffb-e553-4530-87cf-b80f6e400f84.png">
+와 같이 출력된다. 이제 props를 사용해서 같은 결과를 얻어보자. props 는 상위컴포넌트에서 하위 컴포넌트로 데이터를 전달할때 사용한다는 것을 기억할 것이다. 그래서 App.vue와 Modal.vue의 내용을 바꿔야 한다.  
 
+[App.vue] 
 
-``` <Modal/>. ```
+```html
+<template>
+  <h1>{{ title }}</h1>
+  <p>created by Vue3</p>
+ <Modal comments="회원가입 | 로그인"/>
+</template>
+```
+
+[ Modal.vue ]
+```html
+<template>
+  <div class="backdrop"> 
+    <div class="modal">
+      <h2>{{ comments}}</h2>
+      <p> Modal content</p>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  props:[ 'comments']
+}
+</script>
+
+```
 
