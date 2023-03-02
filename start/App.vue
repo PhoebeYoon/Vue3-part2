@@ -2,7 +2,7 @@
   <h1>{{ title }}</h1>
   <p>created by Vue3</p>
       <Modal :comments="comments" :text ="text" theme="sale" />
-    <button @click="toggleWin">팝업창보기</button>
+      <button>팝업창보기</button>
 </template>
 <script>
 import Modal from './components/Modal.vue'
