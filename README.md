@@ -68,3 +68,6 @@ export default {
 ```  <teleport to=".modals"   v-if="showModal"  > ``` 로 변경한다.  
 여기서 to="css셀렉터"는 teleport가 어디에 있는지 알려주는 것인데 css셀렉터를 전달해야 하기 때문에 <b>.modals </b>라고 적어야 한다.
 
+<img width="300" alt="스크린샷 2023-03-02 오후 10 23 35" src="https://user-images.githubusercontent.com/48478079/222440820-e6f29ee6-26fc-4d0c-8f37-05ced59bd80c.png">   
+
+<img width="250" alt="스크린샷 2023-03-02 오후 10 23 41" src="https://user-images.githubusercontent.com/48478079/222440863-656630ff-af07-4306-a98b-4dbf6e9472b4.png">  <img width="264" alt="스크린샷 2023-03-02 오후 10 23 51" src="https://user-images.githubusercontent.com/48478079/222440880-129bf9bc-e4e9-45a6-b104-0d760c93b467.png">
