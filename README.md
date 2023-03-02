@@ -85,7 +85,7 @@ template 태그가 2개 있다 바깥쪽에 안쪽에, 그리고 안쪽에 새�
   </div>
 </template>
 ```    
-Modal.vue에 보면 slot이 두군데 언급되어 있다. 이 상태에서 실행해보면 아래 이미지와 같이 출력된다. 
+Modal.vue에 보면 slot이 두군데 언급되어 있다. 이 상태에서 실행해보면 아래 이미지와 같이 출력된다.  
 <img width="260" alt="스크린샷 2023-03-02 오후 6 33 44" src="https://user-images.githubusercontent.com/48478079/222389208-efa37795-30a8-4955-a231-82db91aa2bc8.png">
 디폴트인 슬롯이 반복된 것을 확인할 수 있다. 그래서 새로 안쪽에 만든 슬롯에 이름을 지정해주어야 한다. 
 Modal.vue의 내용을 이렇게 변경한다.  
@@ -100,5 +100,20 @@ Modal.vue의 내용을 이렇게 변경한다.
 자식 컴포넌트에는 ``` <slot name="이름"></slot>   ``` 
 
 <img width="260" alt="스크린샷 2023-03-02 오후 6 38 25" src="https://user-images.githubusercontent.com/48478079/222391400-97ea8c7e-2e2f-462c-af0e-092b5379a4f4.png">  
+
+
+## 참고로 알아두자. 
+
+[App.vue] 에서 아래의 내용을 주석처리하고 
+```html
+<h2>UVC</h2>
+<p>Learing font-end-developer course</p>
+```  
+[App.vue]에서 
+```html
+<div class="modal" :class="{sale: theme =='sale'}">
+<slot>이 내용은 부모컴포넌트에서 여기에 들어갔던 디폴트 slot의 내용이 사라질때만 보입니다</slot>
+```   
+
 
 
