@@ -21,8 +21,8 @@
 export default {
 data() {
   return {
-    email: 'test',
-    pw:'pw',
+    email: '',
+    pw:'',
     role :''
   }
 }
