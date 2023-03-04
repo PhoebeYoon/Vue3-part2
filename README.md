@@ -11,7 +11,7 @@
    ```  <template>  안에 있는 내용 삭제 </template>  ```  
    ```  components: { HelloWorld 요거만 삭제 }  ```    
 5. :open_file_folder: components > SignUp.vue 파일 생성 > 파일안에서 <b>'vue'</b> 엔터 ( 자동완성으로 기본태그들이 삽입된다)
-6. 아래와 같이 내용을 수정한다
+6. 아래와 같이 내용을 수정한다 [ SignUp.vue ]
 ``` html
 
 <template>
@@ -40,3 +40,24 @@ input, select {
 }
 </style>
 ```
+[ App.vue ]
+
+```html
+<template>
+  <SignUp></SignUp>
+</template>
+<script>
+import SignUp from './components/SignUp.vue'
+
+export default {
+  name: 'App',
+  components: { 
+    SignUp
+  }
+}
+</script>
+
+```  
+7. 이제 터미널창에서 ``` > npm run serve 엔터 ```  하고 브라우저에서 확인해 보자. 
+
+<img width="361" alt="스크린샷 2023-03-04 오후 12 05 06" src="https://user-images.githubusercontent.com/48478079/222872763-a1ff9752-4b76-4a86-b082-0c3cc8d661a7.png">
