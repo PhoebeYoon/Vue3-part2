@@ -78,6 +78,10 @@ skills 중 원하는 항목을 클릭하면 그 항목을 매개변수로 전달
   ```   
 <img width="276" alt="스크린샷 2023-03-05 오전 12 14 15" src="https://user-images.githubusercontent.com/48478079/222913996-af51947a-6e05-4b3c-90d6-cb735407ef8f.png">
 
-이렇게 html,css,js를 입력했다면 이 3개 중 하나를 클릭하면 해당 항목이 삭제가 됩니다. 여기까지 잘 따라오셨습니다. 수고하셨습니다.
+이렇게 html,css,js를 입력했다면 이 3개 중 하나를 클릭하면 해당 항목이 삭제가 됩니다.  
+
+
+이렇게해서 전체적인 모양은 아래 이미지와 같습니다.   
+<img width="342" alt="스크린샷 2023-03-05 오전 12 18 07" src="https://user-images.githubusercontent.com/48478079/222914208-edb9bb11-dfaa-44a6-a1da-a8ef9d9c302c.png">
 
 
