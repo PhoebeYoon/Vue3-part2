@@ -10,8 +10,8 @@
     <input type="email" required v-model="email">
     <label>password : </label>
     <input type="password" required v-model="pw">
-    <p>{{  email }} , {{ pw }}</p>    <!-- 이것은 입력한 내용을 확인 -->
   </form>
+  <p>{{  email }} , {{ pw }}</p>    <!-- 이것은 입력한 내용을 확인 -->
 </template>
 <script>
 export default {
