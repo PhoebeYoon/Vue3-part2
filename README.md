@@ -10,15 +10,20 @@
     <input type="email" required v-model="email">
     <label>password : </label>
     <input type="password" required v-model="pw">
+    <select v-model="role">
+      <option value="developer">Web Developer</option>
+      <option value="designer">Web Designer</option>
+   </select>
   </form>
-  <p>{{  email }} , {{ pw }}</p>    <!-- 이것은 입력한 내용을 확인 -->
+  <p>{{  email }} , {{ pw }}, {{ role }}</p> <!-- 이것은 입력한 내용을 확인 -->
 </template>
 <script>
 export default {
 data() {
   return {
     email: 'test',
-    pw:'pw'
+    pw:'pw',
+    role :''
   }
 }
 }
