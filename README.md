@@ -68,7 +68,8 @@ input[type="checkbox"]{
 ```javascript
 // return 에 추가
 names:[]
-```
+```  
+개별적인 하나를 선택할때와 여러개가 한개의 세트로 되어 있는 상태에서 선택할때 이와 같이 하면된다 
 여기까지 완성하고 브라우저에서 확인을 해보면 아래 이미지와 같을 것이다.   
 
 <img width="354" alt="스크린샷 2023-03-04 오후 5 55 53" src="https://user-images.githubusercontent.com/48478079/222886730-a6c6b789-b9a0-4e4c-8751-57fc14199519.png">
