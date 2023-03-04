@@ -6,3 +6,7 @@
 
 2. ``` 터미널창 >cd  form-project ```  :open_file_folder: ``` form-project > code .  ``` 
 3. :open_file_folder: components 폴더를 찾아 HelloWorld.vue 파일을 삭제한다 
+4. App.vue 파일을 열고  
+   ```  import HelloWorld from './components/HelloWorld.vue'  ``` 삭제   
+   ```  <template>  안에 있는 내용 삭제 </template> ```  
+   ``` components: { HelloWorld 요거만 삭제 } ```    
