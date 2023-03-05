@@ -38,8 +38,10 @@ index.js파일에서 만약 페이지가 '/' 를 방문하게 되면 ``` compone
 2) v-bind와 함께 사용하여 동적으로 경로를 만들 수 있습니다.  
    예) :to="{name :'About' }"  
    <- index.js에서 ``` { path:'/about', name:about, component: About } ```  
-3) to="test/path" 처럼 붙이면 현재 url에 이 path가 지정되고,   
-4) to="/test/detail" 처럼 붙이면 default url에 해당 경로가 추가됩니다.  
+
+3) 절대 경로 : @ : src(루트)부터 시작 예) '@/assets/imges/이미지파일'
+4) to="test/path" 처럼 붙이면 현재 url에 이 path가 지정되고,   
+5) to="/test/detail" 처럼 붙이면 default url에 해당 경로가 추가됩니다.  
 
 
 이제까지 라우터에 대한 기본적인 내용을 살펴보았습니다.   
