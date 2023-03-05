@@ -21,3 +21,8 @@ index.js 의 마지막 줄 ```export default rounter ```는 다른 파일의 내
 그리고 기억해야할 한가지는 index.js에 있던 ``` export default rounter ``` 가 main.js 파일의에서 사용된다는 것입니다. 
 
 <img width="628" alt="스크린샷 2023-03-05 오후 6 00 53" src="https://user-images.githubusercontent.com/48478079/222951469-6f899a3d-6a99-4b0e-9dbd-e5322b7a8bd1.png">
+
+여기에서 main.js에 있는 내용 중 
+``` import router from './router ``` 는 ``` import router from './router/index.js' ``` 와 같습니다. html에서 폴더이름을 언급하면 자동적으로 해당폴더의 index파일을 읽어보는 원리와 같이 작동하여 따로 index.js을 언급하지 않는것입니다.  
+
+``` import router from './router ```에서 불러온 후 ``` createApp(App).use(router).mount('#app') ```에 등록해서 사용하는 것입니다. 
