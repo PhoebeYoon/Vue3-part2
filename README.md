@@ -77,4 +77,11 @@ button { background: #0b6dff; border: 0; padding:10px 20px;
 .error { color:crimson; margin-top: 10px; 
   font-size: 0.8em; font-weight: bold;
 }
-```
+```   
+그래서 결과화면은 아래 이미지와 같습니다   
+
+<img width="459" alt="스크린샷 2023-03-05 오후 1 06 43" src="https://user-images.githubusercontent.com/48478079/222941138-56775d5a-99cc-429d-bb80-7d25f6d9c108.png">   
+
+여기까지 잘 따라오셨습니다 수고하셨습니다 
+
+
