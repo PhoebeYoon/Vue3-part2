@@ -27,11 +27,18 @@ index.js 의 마지막 줄 ```export default rounter ```는 다른 파일의 내
 그리고, 
 ``` import router from './router ```에서 불러온 후 ``` createApp(App).use(router).mount('#app') ```에 등록해서 사용하는 것입니다. 
 
-또한 App.vue 파일을 열어보면 template 태그안에 ``` <router-view/> ``` 가 있는데 이것은 vue router를 위한 특별한 태그라고 보시면 됩니다  
+또한 App.vue 파일을 열어보면 template 태그안에 ``` <router-view/> ``` 가 있는데 이것은 vue router를 위한 특별한 태그라고 보시면 되며, url에 따른 컴포넌트가 화면에 그려지는 영역이기도 합니다. 
 
 index.js파일에서 만약 페이지가 '/' 를 방문하게 되면 ``` component:Home ``` 컴포넌트 전체가 App.vue에 있는 ```  <router-view/>  ``` 에 삽입된다고 생각하시면 됩니다  이미지로 표현해보면 아래와 같습니다.  
 
-<img width="621" alt="스크린샷 2023-03-05 오후 6 21 48" src="https://user-images.githubusercontent.com/48478079/222952456-cb42dcf0-05b2-4989-b3f9-0b35488ba3e8.png">  
+<img width="621" alt="스크린샷 2023-03-05 오후 6 21 48" src="https://user-images.githubusercontent.com/48478079/222952456-cb42dcf0-05b2-4989-b3f9-0b35488ba3e8.png">   
+
+또한 <router-link to="경로"> 로 되어 있는 부분은  컴파일 시, <a> 태그로 변환됩니다.   
+to 속성 값에는 '경로'를 지정하고,    
+v-bind와 함께 사용하여 동적으로 경로를 만들 수 있습니다. 예) :to="{ }"    
+to="test/path" 처럼 붙이면 현재 url에 이 path가 지정되고,   
+to="/test/detail" 처럼 붙이면 default url에 해당 경로가 추가됩니다.  
+
 
 이제까지 라우터에 대한 기본적인 내용을 살펴보았습니다. 다음 수업에서는 메뉴를 변경한 컴포넌트를 만들어보겠습니다. 
 
