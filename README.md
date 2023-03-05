@@ -43,21 +43,21 @@ index.js파일에서 만약 페이지가 '/' 를 방문하게 되면 ``` compone
 
 
 이제까지 라우터에 대한 기본적인 내용을 살펴보았습니다.   
-다음 수업을 위해 HomeView.vue 파일에서   
-1)  ``` import HelloWorld from '@/components/HelloWorld.vue' ``` 삭제하고   
-2) components 폴더에서 ' HelloWorld.vue ' 도 삭제합니다.   
-3) HomeView.vue 파일에서  
+다음 수업을 위해    
+1) components 폴더에서 ' HelloWorld.vue '를 삭제합니다.   
+2) HomeView.vue 파일에서  
 ``` javascript
 <template>
   <div class="home">
-    <h1>Homepage</h1>
-    <p>Router 사용한 템플릿</p>
+   <h1>This is Home page</h1>
+   <p> Router를 활용한 예</p>
   </div>
 </template>
 <script>
 export default {
   name: 'HomeView',
-  components: { }
+  components: {
+  }
 }
 </script>
 ``` 
