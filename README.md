@@ -65,6 +65,3 @@ export default {
 
 <img width="284" alt="스크린샷 2023-03-05 오후 9 11 56" src="https://user-images.githubusercontent.com/48478079/222959748-df25c78f-2160-4ed0-b021-bbece14235e7.png"><img width="284" alt="스크린샷 2023-03-05 오후 9 12 03" src="https://user-images.githubusercontent.com/48478079/222959763-79b052d1-8c54-4212-8eef-0392f67117f2.png">
 
-
-다음 수업에서는 메뉴를 변경한 컴포넌트를 만들어보겠습니다. 
-
