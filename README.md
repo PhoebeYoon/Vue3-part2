@@ -33,10 +33,3 @@ index.js파일에서 만약 페이지가 '/' 를 방문하게 되면 ``` compone
 
 <img width="621" alt="스크린샷 2023-03-05 오후 6 21 48" src="https://user-images.githubusercontent.com/48478079/222952456-cb42dcf0-05b2-4989-b3f9-0b35488ba3e8.png">  
 
-
-
-
-
-
-
-
