@@ -27,9 +27,10 @@ index.js 의 마지막 줄 ```export default rounter ```는 다른 파일의 내
 그리고, 
 ``` import router from './router ```에서 불러온 후 ``` createApp(App).use(router).mount('#app') ```에 등록해서 사용하는 것입니다. 
 
-또한 App.vue 파일을 열어보면 template 태그안에 ``` <router-view/> ``` 가 있는데 이것은 vue rounter를 위한 특별한 태그라고 보시면 됩니다  
+또한 App.vue 파일을 열어보면 template 태그안에 ``` <router-view/> ``` 가 있는데 이것은 vue router를 위한 특별한 태그라고 보시면 됩니다  
 
 index.js파일에서 만약 페이지가 '/' 를 방문하게 되면 ``` component:Home ``` 컴포넌트 전체가 App.vue에 있는 ```  <router-view/>  ``` 에 삽입된다고 생각하시면 됩니다  이미지로 표현해보면 아래와 같습니다.  
+
 <img width="621" alt="스크린샷 2023-03-05 오후 6 21 48" src="https://user-images.githubusercontent.com/48478079/222952456-cb42dcf0-05b2-4989-b3f9-0b35488ba3e8.png">  
 
 
