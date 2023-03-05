@@ -47,7 +47,7 @@ index.js파일에서 만약 페이지가 '/' 를 방문하게 되면 ``` compone
 1)  ``` import HelloWorld from '@/components/HelloWorld.vue' ``` 삭제하고   
 2) components 폴더에서 ' HelloWorld.vue ' 도 삭제합니다.   
 3) HomeView.vue 파일에서  
-```  
+``` javascript
 <template>
   <div class="home">
     <h1>Homepage</h1>
@@ -60,9 +60,8 @@ export default {
   components: { }
 }
 </script>
-
-``` 로 변경합니다 
-
+``` 
+로 변경합니다 
 
 다음 수업에서는 메뉴를 변경한 컴포넌트를 만들어보겠습니다. 
 
