@@ -67,7 +67,8 @@ methods: {
 }
 </script>
 ```   
-data에 passwordErr 항목을 추가했고, methods에 handleSubmit함수 추가했습니다.  기존의 스타일에 아래 내용을 추가합니다. 
+data에 passwordErr 항목을 추가했고, methods에 handleSubmit함수를 추가했습니다.  
+기존의 스타일에 아래 내용을 추가합니다. 
 
 ``` style
 button { background: #0b6dff; border: 0; padding:10px 20px;
