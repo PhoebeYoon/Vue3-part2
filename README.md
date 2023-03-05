@@ -17,3 +17,7 @@ const router = createRouter({
 여기 createRouter()안에 있는 history 항목은 url의 히스토리를 기억해서 우리가 브라우저에서 이전페이지, 다음페이지로 이동하도록 도와줍니다 또한 웹 해시를 기억하고 있습니다. 그리고 ' process.env.BASE_URL ' 는 우리 프로젝트의 기본 url를 전달해줍니다
 그리고 createRouter()안의 마지막 항목인 'routes' 는 라우터자신을 말합니다.   
 index.js 의 마지막 줄 ```export default rounter ```는 다른 파일의 내용을 참조해오기 위한 설정으로 일단 알아두시면 될듯합니다. 
+
+그리고 기억해야할 한가지는 index.js에 있던 ``` export default rounter ``` 가 main.js 파일의에서 사용된다는 것입니다. 
+
+<img width="628" alt="스크린샷 2023-03-05 오후 6 00 53" src="https://user-images.githubusercontent.com/48478079/222951469-6f899a3d-6a99-4b0e-9dbd-e5322b7a8bd1.png">
