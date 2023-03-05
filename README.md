@@ -33,7 +33,7 @@ index.js파일에서 만약 페이지가 '/' 를 방문하게 되면 ``` compone
 
 <img width="621" alt="스크린샷 2023-03-05 오후 6 21 48" src="https://user-images.githubusercontent.com/48478079/222952456-cb42dcf0-05b2-4989-b3f9-0b35488ba3e8.png">   
 
-또한 <router-link to="경로"> 로 되어 있는 부분은  컴파일 시, <a> 태그로 변환됩니다.   
+또한 ```<router-link to="경로"> ```로 되어 있는 부분은  컴파일 시, ``` <a> ``` 태그로 변환됩니다.   
 1) to 속성 값에는 '경로'를 지정하고,    
 2) v-bind와 함께 사용하여 동적으로 경로를 만들 수 있습니다.  
    예) :to="{name :'About' }"  
