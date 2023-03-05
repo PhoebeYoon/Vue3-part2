@@ -24,5 +24,5 @@ index.js 의 마지막 줄 ```export default rounter ```는 다른 파일의 내
 
 여기에서 main.js에 있는 내용 중 
 ``` import router from './router ``` 는 ``` import router from './router/index.js' ``` 와 같습니다. html에서 폴더이름을 언급하면 자동적으로 해당폴더의 index파일을 읽어보는 원리와 같이 작동하여 따로 index.js을 언급하지 않는것입니다.  
-
+그리고, 
 ``` import router from './router ```에서 불러온 후 ``` createApp(App).use(router).mount('#app') ```에 등록해서 사용하는 것입니다. 
