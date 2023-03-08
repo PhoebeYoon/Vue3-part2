@@ -17,13 +17,39 @@
 
 ### 컴포넌트의 기본구조를 vs code에 셋팅하기 
 -  vs code > file > preference > User snippets, 검색창에서 vue 엔터 > vue 선택
- ``` {
-  "snippets 이름": {
-    "prefix": "snippets 실행 트리거",
-    "body": [
-      // snippets 실행시 원하는 template 작성
-    ],
-    "description": "snippets에대한 설명을 작성합니다."
-  }
+``` 
+"Generate Basic Vue Code":{
+	"prefix":"vue-start",
+	"body": [
+ "<template>\n<div></div>\n</template>\n<script>\n\nexport default{ 
+  \n\tname:'',\n\tcomponents:{},\n\tdata(){\n\t\treturn{\n\t\t\tsampleData:''\n\t\t};\n\t},
+  \n\tsetup(){},\n\tcreated(){},\n\tmounted(){},\n\tunmounted(){},\n\tmethods:{}\n}\n</script>"
+	],
+	"description": "Generate Basic Vue Code"
 }
+```
+이렇게 설정하고
+📁임의의파일.vue 를 만들고 빈화면에서 그냥 'vue' 라는 글자를 적으면 'vue-start' 팝업으로 나타난다. 이것을 선택하면 자동완성으로 기본태그들이 쭈욱 나타난다. 아래와 같이.  
+
+```
+<template>
+<div></div>
+</template>
+<script>
+
+export default{ 
+  name:'',
+  components:{},
+  data(){
+    return{
+      sampleData:''
+    };
+  },
+  setup(){},
+  created(){},
+  mounted(){},
+  unmounted(){},
+  methods:{}
+}
+</script>
 ```
