@@ -55,7 +55,7 @@ export default{
 ```
 ### 이 과정에서 필요한 요소만 일단 이해하기
 - data : 인스턴스의 데이터 속성으로 정보를 저장하거나 속성변수등을 선언, (This section allows you to define any local variables to provide initial information to the component, which acts as a local state of the component)
-- methods : 이 섹션은 메서드 또는 이벤트 핸들러 기능을 정의하는 데 사용됩니다. )
+- methods : 이 섹션은 메서드 또는 이벤트 핸들러 기능을 정의하는 데 사용됩니다.
 - computed : 이 섹션은 계산된 속성으로 알려진 가상 기능을 정의하는 데 사용되며, 이를 메서드 또는 템플릿에서 사용할 수 있습니다. 기본적으로 계산된 속성의 출력은 Vue에 의해 캐시되므로 계산된 속성에 대한 호출은 매우 성능이 뛰어납니다.
 
 - watch : 이 섹션은 속성, 변수 또는 계산된 속성을 모니터링하는 데 사용됩니다. 특정 변수의 값이 변경될 때 작업을 수행하려는 경우가 있습니다. 그런 경우에는 감시자를 설치하는 것이 매우 편리하다.
