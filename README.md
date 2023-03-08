@@ -53,3 +53,8 @@ export default{
 }
 </script>
 ```
+### 각 요소 이해하기
+- data : 인스턴스의 데이터 속성으로 정보를 저장하거나 속성변수등을 선언
+- methods : 이벤트 및 화면동작에 사용될 메서드
+- computed : 
+
